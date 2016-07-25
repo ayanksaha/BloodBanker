@@ -184,14 +184,14 @@
 								<tr>
 									<td><font color="Red"><%=rs.getString("INST_NM") %></font></td>
 									<td><font color="Red"><%=rs.getString("ADDRESS") %></font></td>
-									<td><%
+									<td><font color="Red"><%
 										if(bldGrp==null || bldGrp.isEmpty()){
 											String strbldgrp = rs.getString("BLOOD_GRP");
 											strbldgrp = strbldgrp.replace("Pos", "+");
 											strbldgrp = strbldgrp.replace("Neg", "-");
 											%>
 											
-											<label><font color="Red"><%=strbldgrp %></label>
+											<label><%=strbldgrp %></label>
 										<%} %>
 										<%=rs.getString("AVAILABLITY") %> <%=rs.getString("UOM") %></font>
 									</td>
